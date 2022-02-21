@@ -72,6 +72,9 @@ export const getFontFamilyString = ({
 }: {
   fontFamily: FontFamilyValues;
 }) => {
+  if (true) {
+    return `'京东朗正体 正道',JingDongLangZhengTi, ${WINDOWS_EMOJI_FALLBACK_FONT}`;
+  }
   for (const [fontFamilyString, id] of Object.entries(FONT_FAMILY)) {
     if (id === fontFamily) {
       return `${fontFamilyString}, ${WINDOWS_EMOJI_FALLBACK_FONT}`;
